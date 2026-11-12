@@ -1,123 +1,93 @@
-# 🌧️ Ako ang Bagyo | Animated Lyrics Visualizer
+# 🎵 Animated Lyrics Visualizer
 
-An animated, storm-themed lyrics visualizer for **"Ako ang Bagyo" by SHEAN**, developed using Python.
+A Python-based animated music and lyrics visualizer that combines synchronized lyrics, audio playback, and creative visual effects to create an immersive music experience.
 
-Experience the song through a dramatic visual presentation featuring rain, lightning, dark clouds, strong winds, flying debris, and synchronized lyrics.
+Each version or branch can feature its own visual theme, animations, and atmosphere while sharing the same core concept of bringing music to life through visuals.
 
-## 🎬 Features
+## ✨ Features
 
-- 🌧️ Animated rain effects
-- ⚡ Lightning and storm effects
-- ☁️ Moving dark clouds
-- 💨 Animated wind streaks
-- 🏚️ Flying debris and yero effects
-- 💔 Animated broken hearts
 - 🎵 Synchronized lyrics using LRC timestamps
 - 🔊 Automatic MP3 playback
+- 🎨 Custom animated backgrounds
+- 🌧️ Dynamic visual effects and animations
 - 🖥️ Full-screen visualizer
-- ⌨️ ESC key to exit the visualizer
-- 📁 Universal file paths for easy sharing
+- ⌨️ Keyboard controls
+- 📁 Universal file paths using Python's `pathlib`
+- 🔀 Multiple visual themes and versions through Git branches
+
+## 🎨 Visual Themes
+
+Different branches may contain different visualizer designs, environments, and animation styles.
+
+Each branch represents a separate version or creative direction of the project.
 
 ## 🛠️ Built With
 
-- **Python** – Main programming language
-- **Tkinter** – Graphical interface and animation window
-- **Pygame** – Audio playback
-- **Math** – Animation calculations
-- **Random** – Randomized weather and visual effects
+- Python
+- Tkinter
+- Pygame
+- Pathlib
+- Math and Random modules
 
 ## 📋 Requirements
-
-Before running the project, make sure you have:
 
 - Python 3.10 or newer
 - Pygame
 
-Install Pygame:
+Install the required package:
 
 ```bash
 pip install pygame
 ```
 
-Tkinter is included with most standard Python installations.
+## 🚀 Getting Started
 
-## 📂 Project Structure
-
-Keep all required files inside the same folder:
-
-```text
-Ako Ang Bagyo By Charles/
-│
-├── ako_ang_bagyo.py
-├── lyrics.lrc
-└── ako ang bagyo - SHEAN.mp3
-```
-
-**Important:** Make sure the filenames match the ones used in the Python script.
-
-## 🚀 Installation and Usage
-
-1. Download or clone this repository.
-
-```bash
-git clone https://github.com/YOUR-USERNAME/ako-ang-bagyo-lyrics-visualizer.git
-```
-
+1. Clone or download this repository.
 2. Open the project folder.
-
-3. Install the required dependency.
-
-```bash
-pip install pygame
-```
-
-4. Make sure the MP3 and LRC files are in the same folder as the Python script.
-
-5. Run the visualizer.
+3. Install the required dependencies.
+4. Make sure the audio and lyrics files are in their expected locations.
+5. Run the Python script for your selected version.
 
 ```bash
-python ako_ang_bagyo.py
+python main.py
 ```
 
-6. Press **ESC** to close the visualizer.
+*Note: The actual script filename may differ depending on the branch.*
 
-## 🎼 Lyrics Synchronization
+## 🎼 Lyrics Format
 
-The visualizer uses an `.lrc` file to display lyrics at specific timestamps.
+The visualizer supports LRC timestamp formatting.
 
 Example:
 
 ```text
-[00:00.00] First line of the song
-[00:05.00] Second line of the song
-[00:10.00] Third line of the song
+[00:00.00] First line of lyrics
+[00:05.00] Second line of lyrics
+[00:10.00] Third line of lyrics
 ```
 
-You can adjust the timestamps in `lyrics.lrc` to synchronize the lyrics with the audio.
+## 📂 Project Structure
 
-## 📁 Universal File Paths
+File organization may vary between branches, but a typical version contains:
 
-This project uses Python's `pathlib` to automatically locate files in the project directory.
-
-```python
-SCRIPT_DIR = Path(__file__).resolve().parent
-
-LYRICS_FILE = SCRIPT_DIR / "lyrics.lrc"
-AUDIO_FILE = SCRIPT_DIR / "ako ang bagyo - SHEAN.mp3"
+```text
+Project/
+├── main.py
+├── lyrics.lrc
+├── audio.mp3
+└── assets/
 ```
-
-This makes the project easier to move and share without changing personal computer paths.
 
 ## ⚠️ Disclaimer
 
-This project is created for educational and entertainment purposes. The song, audio, lyrics, and other third-party content belong to their respective owners. I do not claim ownership of any third-party content.
+This project is intended for educational, creative, and entertainment purposes. Music, lyrics, audio recordings, and other third-party materials belong to their respective owners. No ownership of third-party content is claimed.
 
 ## 👨‍💻 Developer
 
-**Charles**
+Created by **Charles**
 
-Created with Python, creativity, and passion for music and programming.
+Developed with Python, creativity, and a passion for music and programming.
 
 ---
 
-*Where music meets the storm.* 🌩️
+*Bringing music to life, one frame at a time.*
