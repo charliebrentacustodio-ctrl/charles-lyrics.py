@@ -1,93 +1,104 @@
-# 🎵 Animated Lyrics Visualizer
+## ⚙️ Setup and Installation Guide
 
-A Python-based animated music and lyrics visualizer that combines synchronized lyrics, audio playback, and creative visual effects to create an immersive music experience.
+Follow these steps to set up and run the project on your computer.
 
-Each version or branch can feature its own visual theme, animations, and atmosphere while sharing the same core concept of bringing music to life through visuals.
+### 1. Install Python
 
-## ✨ Features
+Download and install Python from the official website:
 
-- 🎵 Synchronized lyrics using LRC timestamps
-- 🔊 Automatic MP3 playback
-- 🎨 Custom animated backgrounds
-- 🌧️ Dynamic visual effects and animations
-- 🖥️ Full-screen visualizer
-- ⌨️ Keyboard controls
-- 📁 Universal file paths using Python's `pathlib`
-- 🔀 Multiple visual themes and versions through Git branches
+https://www.python.org/downloads/
 
-## 🎨 Visual Themes
+Make sure to check **"Add Python to PATH"** during installation.
 
-Different branches may contain different visualizer designs, environments, and animation styles.
+### 2. Clone the Repository
 
-Each branch represents a separate version or creative direction of the project.
+Open your terminal or Command Prompt and run:
 
-## 🛠️ Built With
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+```
 
-- Python
-- Tkinter
-- Pygame
-- Pathlib
-- Math and Random modules
+Alternatively, click **Code → Download ZIP** on GitHub and extract the downloaded folder.
 
-## 📋 Requirements
+### 3. Choose a Branch
 
-- Python 3.10 or newer
-- Pygame
+If you want to use a specific visualizer version, switch to its branch:
 
-Install the required package:
+```bash
+git branch -a
+```
+
+To switch branches:
+
+```bash
+git switch branch-name
+```
+
+Replace `branch-name` with your chosen branch.
+
+### 4. Install Dependencies
+
+Open the project folder in your terminal and install Pygame:
 
 ```bash
 pip install pygame
 ```
 
-## 🚀 Getting Started
+### 5. Check Your Project Files
 
-1. Clone or download this repository.
-2. Open the project folder.
-3. Install the required dependencies.
-4. Make sure the audio and lyrics files are in their expected locations.
-5. Run the Python script for your selected version.
+Make sure the required files for your selected branch are present, including:
+
+- Python source files (`.py`)
+- Audio file (`.mp3`)
+- Lyrics file (`.lrc`)
+- Additional assets, if required
+
+Keep files in the expected folder locations.
+
+### 6. Run the Program
+
+Execute the main Python script:
 
 ```bash
 python main.py
 ```
 
-*Note: The actual script filename may differ depending on the branch.*
+The actual filename may vary depending on the selected branch.
 
-## 🎼 Lyrics Format
+### 7. Enjoy the Visualizer!
 
-The visualizer supports LRC timestamp formatting.
+The visualizer should open and start playing the audio with synchronized lyrics and animations.
 
-Example:
-
-```text
-[00:00.00] First line of lyrics
-[00:05.00] Second line of lyrics
-[00:10.00] Third line of lyrics
-```
-
-## 📂 Project Structure
-
-File organization may vary between branches, but a typical version contains:
-
-```text
-Project/
-├── main.py
-├── lyrics.lrc
-├── audio.mp3
-└── assets/
-```
-
-## ⚠️ Disclaimer
-
-This project is intended for educational, creative, and entertainment purposes. Music, lyrics, audio recordings, and other third-party materials belong to their respective owners. No ownership of third-party content is claimed.
-
-## 👨‍💻 Developer
-
-Created by **Charles**
-
-Developed with Python, creativity, and a passion for music and programming.
+Use the keyboard controls provided by your selected version to interact with or exit the program.
 
 ---
 
-*Bringing music to life, one frame at a time.*
+## 📝 Troubleshooting
+
+**Pygame is not installed**
+
+```bash
+pip install pygame
+```
+
+**Python is not recognized**
+
+Make sure Python is installed and added to your system PATH.
+
+**Audio file not found**
+
+Check that the MP3 filename and file location match the paths defined in the script.
+
+**Lyrics are not displaying**
+
+Make sure the `.lrc` file exists and follows the correct timestamp format.
+
+**Wrong visualizer version**
+
+Check your current Git branch:
+
+```bash
+git branch
+```
+
+Switch to the desired branch using `git switch branch-name`.
